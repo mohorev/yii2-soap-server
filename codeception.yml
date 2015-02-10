@@ -1,0 +1,11 @@
+actor: Tester
+paths:
+    tests: tests
+    log: tests/_output
+    data: tests/_data
+    helpers: tests/_support
+settings:
+    bootstrap: _bootstrap.php
+    memory_limit: 1024M
+    log: true
+    colors: true
