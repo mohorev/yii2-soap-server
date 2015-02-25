@@ -101,8 +101,7 @@ class Action extends \yii\base\Action
         } else {
             $response = Yii::$app->getResponse();
             $response->getHeaders()->set('Content-Type', 'application/xml; charset=' . $response->charset);
-            $response->content = $this->getService()->generateWsdl();
-            return $response;
+            return $this->getService()->generateWsdl();
         }
     }
 
