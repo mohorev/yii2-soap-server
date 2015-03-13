@@ -189,6 +189,12 @@ class Service extends Component
         if ($this->actor !== null) {
             $options['actor'] = $this->actor;
         }
+        foreach ($this->classMap as $type => $className) {
+            if (is_int($type)) {
+                $type = $className;
+            }
+            $options['classmap'][$type] = $className;
+        }
         $options['encoding'] = $this->encoding;
         return $options;
     }
