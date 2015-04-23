@@ -3,6 +3,8 @@ SOAP Server Extension for Yii 2
 
 Note, PHP SOAP extension is required.
 
+[![Latest Stable Version](https://poser.pugx.org/mongosoft/yii2-soap-server/v/stable.png)](https://packagist.org/packages/mongosoft/yii2-soap-server)
+[![Total Downloads](https://poser.pugx.org/mongosoft/yii2-soap-server/downloads.png)](https://packagist.org/packages/mongosoft/yii2-soap-server)
 [![Build Status](https://travis-ci.org/mongosoft/yii2-soap-server.png)](https://travis-ci.org/mongosoft/yii2-soap-server)
 
 Installation
