@@ -51,10 +51,6 @@ class Action extends \yii\base\Action
      */
     public $wsdlUrl;
     /**
-     * @var array
-     */
-    public $wsdlOptions = [];
-    /**
      * @var array a list of PHP classes that are declared as complex types in WSDL.
      * This should be an array with WSDL types as keys and names of PHP classes as values.
      * A PHP class can also be specified as a path alias.
@@ -115,8 +111,7 @@ class Action extends \yii\base\Action
             $this->_service = new Service([
                 'provider' => $this->provider,
                 'serviceUrl' => $this->serviceUrl,
-                'wsdlUrl' => $this->wsdlUrl,
-                'wsdlOptions' => $this->wsdlOptions,
+                'wsdlUrl' => $this->wsdlUrl
             ]);
             if (is_array($this->classMap)) {
                 $this->_service->classMap = $this->classMap;
