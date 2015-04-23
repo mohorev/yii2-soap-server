@@ -148,7 +148,7 @@ class Service extends Component
         header('Content-Type: text/xml;charset=' . $this->encoding);
 
         if ($this->wsdlOptions['disableWsdlMode'] == true) {
-            $server = new SoapServer(null, array_merge(array('uri' => $this->serviceUrl), $this->getOptions()));
+            $server = new SoapServer(null, array_merge(['uri' => $this->serviceUrl], $this->getOptions()));
         } else {
             $server = new SoapServer($this->wsdlUrl, $this->getOptions());
         }
