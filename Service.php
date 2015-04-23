@@ -35,9 +35,9 @@ class Service extends Component
      */
     public $wsdlUrl;
     /**
-     * @var array
+     * @var boolean indicating if the WSDL mode of SoapServer should be disabled.
      */
-    public $wsdlOptions = [];
+    public $disableWsdlMode = false;
     /**
      * @var Cache|array|string the cache object or the application component ID of the cache object.
      * The WSDL will be cached using this cache object. Note, this property has meaning only
@@ -147,7 +147,7 @@ class Service extends Component
     {
         header('Content-Type: text/xml;charset=' . $this->encoding);
 
-        if ($this->wsdlOptions['disableWsdlMode'] == true) {
+        if ($this->disableWsdlMode) {
             $server = new SoapServer(null, array_merge(['uri' => $this->serviceUrl], $this->getOptions()));
         } else {
             $server = new SoapServer($this->wsdlUrl, $this->getOptions());
