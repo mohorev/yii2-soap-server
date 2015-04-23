@@ -59,18 +59,20 @@ class ApiController extends Controller
 }
 ```
 
-In case you want to disable the WSDL mode of SoapServer, you can specify this in the `serviceOptions` parameter as indicated below. You can use this when the request is to complex for the WSDL generator.
+In case you want to disable the WSDL mode of SoapServer, you can specify this in the `serviceOptions` parameter as indicated below.
+You can use this when the request is to complex for the WSDL generator.
 
 ```php
     /**
      * @inheritdoc
      */
-    public function actions() {
+    public function actions()
+    {
         return [
             'index' => [
                 'class' => 'mongosoft\soapserver\Action',
                 'serviceOptions' => [
-                    'disableWsdlMode' => true
+                    'disableWsdlMode' => true,
                 ]
             ]
         ];
