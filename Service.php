@@ -97,7 +97,7 @@ class Service extends Component
             throw new InvalidConfigException('The "wsdlUrl" property must be set.');
         }
         if ($this->enableCaching) {
-            $this->cache = Instance::ensure($this->cache, Cache::className());
+            $this->cache = Instance::ensure($this->cache, Cache::class);
         }
 
         if (YII_DEBUG) {

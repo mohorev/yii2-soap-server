@@ -1,13 +1,23 @@
 <?php
 
-namespace mongosoft\soapserver\tests\unit;
 
-use Codeception\TestCase\Test;
-use SimpleXMLElement;
+namespace Tests\Unit;
+
+use Tests\Support\UnitTester;
 use mongosoft\soapserver\Service;
+use mongosoft\soapserver\tests\unit\Controller;
+use SimpleXMLElement;
 
-class ServiceTest extends Test
+class ServiceTest extends \Codeception\Test\Unit
 {
+
+    protected UnitTester $tester;
+
+    protected function _before()
+    {
+    }
+
+    // tests
     public function testGenerateWsdl()
     {
         $controller = new Controller();
