@@ -5,7 +5,7 @@ namespace Tests\Unit;
 
 use Tests\Support\UnitTester;
 use mongosoft\soapserver\Service;
-use mongosoft\soapserver\tests\unit\Controller;
+use mongosoft\soapserver\tests\Unit\Controller;
 use SimpleXMLElement;
 
 class ServiceTest extends \Codeception\Test\Unit

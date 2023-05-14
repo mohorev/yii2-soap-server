@@ -1,6 +1,6 @@
 <?php
 
-namespace mongosoft\soapserver\tests\unit;
+namespace mongosoft\soapserver\tests\Unit;
 
 class Controller
 {
