@@ -4,7 +4,7 @@ namespace mongosoft\soapserver\tests\unit;
 
 class Controller
 {
-    public function actions()
+    public function actions(): array
     {
         return [
             'hello' => [
@@ -18,7 +18,7 @@ class Controller
      * @return string
      * @soap
      */
-    public function getHello($name)
+    public function getHello(string $name): string
     {
         return 'Hello ' . $name;
     }
