@@ -1,11 +1,12 @@
 SOAP Server Extension for Yii 2
-==============================
+===============================
 
 Note, PHP SOAP extension is required.
 
-[![Latest Stable Version](https://poser.pugx.org/mongosoft/yii2-soap-server/v/stable.png)](https://packagist.org/packages/mongosoft/yii2-soap-server)
+[![Latest Stable Version](https://poser.pugx.org/mongosoft/yii2-soap-server/v/stable.png)](https://github.com/mohorev/yii2-soap-server/releases)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](docs/LICENSE.md)
+[![Build Status](https://github.com/mohorev/yii2-soap-server/actions/workflows/build.yml/badge.svg)](https://github.com/mohorev/yii2-soap-server/actions/workflows/build.yml)
 [![Total Downloads](https://poser.pugx.org/mongosoft/yii2-soap-server/downloads.png)](https://packagist.org/packages/mongosoft/yii2-soap-server)
-[![Build Status](https://travis-ci.org/mongosoft/yii2-soap-server.png)](https://travis-ci.org/mongosoft/yii2-soap-server)
 
 Installation
 ------------
@@ -79,3 +80,21 @@ You can use this when the request is to complex for the WSDL generator.
     }
 ```
 
+Testing
+-------
+
+``` bash
+$ vendor/bin/codecept run Unit
+```
+
+## Contributing
+
+Please see [CONTRIBUTING](docs/CONTRIBUTING.md) for details.
+
+## Security
+
+If you discover any security related issues, please email instead of using the issue tracker.
+
+## License
+
+The MIT License (MIT). Please see [License File](docs/LICENSE.md) for more information.

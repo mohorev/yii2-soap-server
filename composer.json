@@ -10,7 +10,7 @@
     ],
     "homepage": "https://github.com/mongosoft/yii2-soap-server",
     "type": "yii2-extension",
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "support": {
         "issues": "https://github.com/mongosoft/yii2-soap-server/issues?state=open",
         "source": "https://github.com/mongosoft/yii2-soap-server"
